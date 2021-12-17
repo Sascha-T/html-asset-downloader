@@ -20,7 +20,7 @@ async function process(inputHTML, outputAssets) {
     for (const i in urls) {
         let url = urls[i];
         let data = await fetch(url);
-        let rawData = Buffer.of(await data.arrayBuffer());
+        let rawData = Buffer.from(await data.arrayBuffer());
 
         let header = data.headers.get("Content-Type");
         let extension;

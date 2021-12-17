@@ -1,4 +1,3 @@
-// The Saschi HTML Localiser
 let fetch;
 const {writeFile, readFile, mkdir} = require("fs/promises");
 const {getExtension} = require('mime');
